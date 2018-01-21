@@ -165,7 +165,10 @@ project(":sample-domain") {
         compile "org.thymeleaf.extras:thymeleaf-extras-conditionalcomments"
 
         // mysql database
-        compile "mysql:mysql-connector-java"
+        //compile "mysql:mysql-connector-java"
+        compile files("ojdbc7.jar")
+        //compile group: 'com.github.noraui', name: 'ojdbc7', version: '12.1.0.2'
+//        compile group: 'com.oracle.jdbc', name: 'ojdbc7', version: '12.1.0.2'
         compile "org.flywaydb:flyway-core"
         compile "com.zaxxer:HikariCP"
 
